@@ -35,3 +35,16 @@ flowchart
 ```
 
 
+# DIAGRAMA DE ESTADOS
+## UML de estados
+```mermaid
+stateDiagram-v2
+    state "Tumbado" as tumbado
+    state "Levantarse" as levantado
+    state "Saltando" as saltar
+    [*] --> tumbado
+    tumbado --> levantado: levantarse
+    levantado --> saltando: saltando
+    saltando --> [*]
+```
+
