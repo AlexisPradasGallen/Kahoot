@@ -1,4 +1,5 @@
-# Kahoot
+# DIAGRAMA DE CLASES
+## Kahoot
 Tiene tres clases la clase professor, la clase alumno y la clase partida.
 
 ```mermaid
@@ -23,7 +24,8 @@ sequenceDiagram
 
 ```
 
-# UML de login
+# DIAGRAMA DE ACTIVIDADES
+## UML de login
 ```mermaid
 flowchart
     A[Entrar a la pagina] --> B{Existe usuario?}
@@ -31,3 +33,5 @@ flowchart
     B --> |Registro| D[Crear usuario] 
     D --> B
 ```
+
+
