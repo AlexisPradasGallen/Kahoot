@@ -22,4 +22,12 @@ sequenceDiagram
     Profesor->>Alumno: Mostrar tabla clasificacion
 
 ```
+
+# UML de login
+```mermaid
+flowchart
+    A[Entrar a la pagina] --> B{Existe usuario?}
+    B --> |Acceso| C[Acceder a mi cuenta] 
+    B --> |Registro| D[Crear usuario] 
+    D --> B
 ```
