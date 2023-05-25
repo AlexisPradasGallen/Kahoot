@@ -41,10 +41,11 @@ flowchart
 stateDiagram-v2
     state "Tumbado" as tumbado
     state "Levantarse" as levantado
-    state "Saltando" as saltar
+    state "Saltando" as saltando
+
     [*] --> tumbado
     tumbado --> levantado: levantarse
-    levantado --> saltando: saltando
+    levantado --> saltando: saltar
     saltando --> [*]
 ```
 
