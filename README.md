@@ -26,6 +26,7 @@ sequenceDiagram
 
 # DIAGRAMA DE ACTIVIDADES
 ## UML de login
+Como acceder en una pagina web como si ya estas logeado como si no  
 ```mermaid
 flowchart
     A[Entrar a la pagina] --> B{Existe usuario?}
@@ -37,13 +38,16 @@ flowchart
 
 # DIAGRAMA DE ESTADOS
 ## UML de estados
+Cuales son los pasos para hacer un burpee
+
 ```mermaid
 stateDiagram-v2
-    state "Tumbado" as tumbado
+    state "Tumbarse" as tumbado
     state "Levantarse" as levantado
     state "Saltando" as saltando
 
-    [*] --> tumbado
+    [*] --> pie
+    pie --> tumbado: tumbarse
     tumbado --> levantado: levantarse
     levantado --> saltando: saltar
     saltando --> [*]
